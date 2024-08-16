@@ -13,7 +13,7 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #7cc576;
+  --accent-color: #ffc107;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -25,7 +25,7 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.605);
   /* The default color of the main navmenu links */
-  --nav-hover-color: #7cc576;
+  --nav-hover-color: #ffc107;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -33,7 +33,7 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #555555;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #7cc576;
+  --nav-dropdown-hover-color: #ffc107;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -638,43 +638,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background: rgb(223, 206, 130);
-  background: -moz-linear-gradient(180deg, rgba(223, 206, 130, 1) 0%, rgba(161, 118, 59, 1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(223, 206, 130, 1) 0%, rgba(161, 118, 59, 1) 100%);
-  background: linear-gradient(180deg, rgba(223, 206, 130, 1) 0%, rgba(161, 118, 59, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dfce82", endColorstr="#a1763b", GradientType=1);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 250ms;
-}
-
-.scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  transform: scale(1.2);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -799,7 +762,7 @@ section,
 }
 
 .hero .btn-get-started {
-  color: #fff;
+  color: #121212;
   background: rgb(223, 206, 130);
   background: -moz-linear-gradient(180deg, rgba(223, 206, 130, 1) 0%, rgba(161, 118, 59, 1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(223, 206, 130, 1) 0%, rgba(161, 118, 59, 1) 100%);
@@ -1085,107 +1048,6 @@ section,
 .services .service-item .description {
   line-height: 24px;
   font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 5px;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
-}
-
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-  }
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: -100%;
-  z-index: 3;
-  transition: all ease-in-out 0.5s;
-  background: color-mix(in srgb, var(--surface-color), transparent 10%);
-  padding: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-  top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  transition: 0.3s;
-  line-height: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 14px;
-  font-size: 28px;
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1494,118 +1356,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-.team .team h3 {
-  font-size: 20px;
-}
-
-.team .team h3 a {
-  color: var(--heading-color);
-}
-
-.team .team .pic {
-  margin-bottom: 30px;
-}
-
-.team .team .pic img {
-  border-radius: 4px;
-}
-
-.team .team .position {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: color-mix(in srgb, var(--heading-color), transparent 30%);
-}
-
-.team p {
-  line-height: 1.7;
-  color: var(--default-color);
-}
-
-.team .more {
-  position: relative;
-  padding-right: 30px;
-  display: inline-block;
-}
-
-.team .more span {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  font-size: 16px;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  color: var(--contrast-color);
-  line-height: 1.6;
-  text-align: center;
-  transition: 0.3s all ease;
-}
-
-.team .more span:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.team .more:hover {
-  color: var(--contrast-color);
-}
-
-.team .more:hover span {
-  background: var(--accent-color);
-}
-
-.team .more.dark {
-  color: var(--default-color);
-}
-
-.team .more.dark>span {
-  color: var(--default-color);
-}
-
-.team .more.dark:hover {
-  color: var(--accent-color);
-}
-
-.team .more.dark:hover span {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
-.team .swiper-wrapper {
-  height: auto;
-}
-
-.team .slider-nav a {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  background: var(--accent-color);
-  border-radius: 4px;
-  transition: 0.2s all ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .slider-nav a i {
-  color: var(--contrast-color);
-}
-
-.team .slider-nav a:hover {
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
-
-.team .slider-nav a:first-child {
-  margin-right: 5px;
-}
-
-/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item+.info-item {
@@ -1678,68 +1428,6 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 /*--------------------------------------------------------------
