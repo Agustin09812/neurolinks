@@ -85,6 +85,11 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 /* PHP Email Form Messages
