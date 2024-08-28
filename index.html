@@ -217,12 +217,13 @@
                 <li><i class="bi bi-check"></i> <span>Embudo de conversión de 3 etapas</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Envio a bases de clientes activos</span></li>
               </ul>
-              <a href="#" class="buy-btn">Consultar</a>
+              <a href="https://api.whatsapp.com/send?phone=5491170644247&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20plan%20basico"
+                target="_blank" class="buy-btn">Consultar</a>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
+            <div class="pricing-item">
               <h3>Plan Business</h3>
               <h4><sup>U$D</sup>500<span> / mensual</span></h4>
               <ul>
@@ -232,7 +233,8 @@
                 <li><i class="bi bi-check"></i> <span>Embudo de conversión de 3 etapas</span></li>
                 <li class="na"><i class="bi bi-x"></i> <span>Envio a bases de clientes activos</span></li>
               </ul>
-              <a href="#" class="buy-btn">Consultar</a>
+              <a href="https://api.whatsapp.com/send?phone=5491170644247&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20plan%20business"
+                target="_blank" class="buy-btn">Consultar</a>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -247,7 +249,8 @@
                 <li><i class="bi bi-check"></i> <span>Embudo de conversión ilimitado</span></li>
                 <li><i class="bi bi-check"></i> <span>Envio a bases de clientes activos</span></li>
               </ul>
-              <a href="#" class="buy-btn">Consultar</a>
+              <a href="https://api.whatsapp.com/send?phone=5491170644247&text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20plan%20master"
+                target="_blank" class="buy-btn">Consultar</a>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -269,7 +272,9 @@
               diseñado especialmente para vos.</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#" target="_blank">Solicitar cotización</a>
+            <a class="cta-btn align-middle"
+              href="https://api.whatsapp.com/send?phone=5491170644247&text=Hola,%20quiero%20solicitar%20un%20plan%20personalizado"
+              target="_blank">Solicitar cotización</a>
           </div>
         </div>
 
@@ -507,30 +512,67 @@
         <div class="row gy-4 justify-content-center">
 
           <div class="col-lg-8">
-            <form action="" method="post" class="email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formsubmit.co/2605ad65c9e1ac3fe8ffe14208582f79" method="post" class="email-form"
+              data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="Nombre" class="form-control" placeholder="Nombre" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="Apellido" class="form-control" placeholder="Apellido" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="number" name="Whatsapp" class="form-control" placeholder="Whatsapp" required
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="Email" placeholder="Email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <select class="form-control" name="Pais" required>
+                    <option value="" disabled selected>Seleccioná tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="España">España</option>
+                    <option value="México">México</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="República Dominicana">República Dominicana</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Cuba">Cuba</option>
+                    <!-- Agrega más países aquí -->
+                  </select>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <input type="text" class="form-control" name="Asunto" placeholder="Asunto" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="Mensaje" rows="6" placeholder="Mensaje" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Enviar</button>
                 </div>
 
+
               </div>
+              <input type="hidden" name="_subject" value="Nuevo mensaje">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <!-- <input type="hidden" name="_next" value="https://www.clientesneurolinks.com/index.html"> -->
             </form>
           </div><!-- End Contact Form -->
 
@@ -561,7 +603,8 @@
           <h4>¡Seguinos en nuestras redes!</h4>
           <p>Enterate de todas las novedades</p>
           <div class="social-links d-flex">
-            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61564993252678&mibextid=ZbWKwL" target="_blank"><i
+                class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/neurolinks.ia?igsh=MTI0eWV5b3ByZzJ4Ng==" target="_blank"><i
                 class="bi bi-instagram"></i></a>
             <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrjnKdHdjQThkTXcbHPTtblssWQFrzfjfLhBsqmNRWXHtBtwPrCdSQkVTttJZcDcBkVvQq"
@@ -584,7 +627,7 @@
 
   <!-- whatsapp btn  -->
 
-  <a href="https://api.whatsapp.com/send?phone=5491169585061&text=Hola%20Lorena!,%20mi%20nombre%20es%20" target="_blank"
+  <a href="https://api.whatsapp.com/send?phone=5491170644247&text=Hola,%20quiero%20mas%20info" target="_blank"
     class="shadow btn-primary rounded-circle wsp-btn">
     <i class="bi bi-whatsapp"></i>
   </a>
