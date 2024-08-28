@@ -23,7 +23,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.605);
+  --nav-color: #ffffff;
   /* The default color of the main navmenu links */
   --nav-hover-color: #ffc107;
   /* Applied to main navmenu links when they are hovered over or active */
@@ -418,7 +418,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(26, 56, 68, 0.7), rgba(15, 33, 40, 0.7));
+  background: linear-gradient(180deg, #1a3844b3, #0f2128b3);
   z-index: 1;
 }
 
@@ -1155,7 +1155,8 @@ select.form-control {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 66px 20px 20px 20px;
+    /* inset: 60px 20px 20px 20px; */
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
@@ -1253,7 +1254,7 @@ select.form-control {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: #212529cc;
     transition: 0.3s;
   }
 
